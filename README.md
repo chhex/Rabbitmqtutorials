@@ -19,54 +19,63 @@ The tutorials must be started in the respective subdirectories.
 Also the config.yaml file must be adapted to the specfic Rabbitmq
 installation
 
+The tutorials are best run in different shell using for example the
+terminal multiplexer https://github.com/tmux/tmux/wiki
+
+
 ## Code
 
-To run [tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorial-one-ruby.html):
+In the following examples for running the code.
+
+The "cd" is always relative to the route directory of the repo
+
+To run
+[tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorial-one-ruby.html):
 
 ``` sh
 cd helloworld
-bundle exec ruby send.rb
-bundle exec ruby receive.rb
+./send.rb 
+./receive.rb
 ```
 
 [Tutorial two: Work Queues](https://www.rabbitmq.com/tutorial-two-ruby.html):
 
 ``` sh
 cd workerqueues
-bundle exec ruby new_task.rb
-bundle exec ruby worker.rb
+/new_task.rb whateverf......... 
+./worker.rb
 ```
 
 [Tutorial three: Publish/Subscribe](https://www.rabbitmq.com/tutorial-three-ruby.html)
 
 ``` sh
 cd publishsubscribe
-bundle exec ruby receive_logs.rb
-bundle exec ruby emit_log.rb
+./receive_logs.rb
+./emit_log.rb another  
 ```
 
 [Tutorial four: Routing](https://www.rabbitmq.com/tutorial-four-ruby.html)
 
 ``` sh
 cd routing
-bundle exec ruby receive_logs_direct.rb
-bundle exec ruby emit_log_direct.rb
+ ./recieve_logs_direct.rb warning 
+ ./emit_log_direct.rb warning pleasenotice 
 ```
 
 [Tutorial five: Topics](https://www.rabbitmq.com/tutorial-five-ruby.html)
 
 ``` sh
 cd topic
-bundle exec ruby receive_logs_topic.rb
-bundle exec ruby emit_log_topic.rb
+./recieve_logs_topic.rb "apg.*.*"  
+./emlt_log_topic.rb "apg.info.release" "Whatever" 
 ```
 
 [Tutorial six: RPC](https://www.rabbitmq.com/tutorial-six-ruby.html)
 
 ``` sh
 cd rpc
-bundle exec ruby rpc_server.rb
-bundle exec ruby rpc_client.rb
+./rpc_server.rb     
+./rpc_client.rb 7  
 ```
 
 To learn more, see [Bunny documentation](http://rubybunny.info).
