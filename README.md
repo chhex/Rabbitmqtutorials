@@ -13,8 +13,11 @@ To install Bunny with Bundler, do
 bundle install
 ```
 
-The tutorials must be started in the respective subdirectories. Also
-config.xml must be adapted to the specfic Rabbitmq installation
+
+The tutorials must be started in the respective subdirectories.
+
+Also the config.yaml file must be adapted to the specfic Rabbitmq
+installation
 
 ## Code
 
